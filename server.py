@@ -112,7 +112,7 @@ def signup():
         myresult = mycursor.fetchall()
         for x in myresult:
             if x == (name,):
-                return render_template("signup.html", msname="sorry name is already exist")
+                return render_template("signup.html", msname="sorry The name is already exist")
             mycursor.execute(m)
             myresult1 = mycursor.fetchall()
             for y in myresult1:
